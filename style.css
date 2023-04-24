@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+body{
+    min-width: 340px;
+}
+section{
+    margin: 0 10% 0 10%;
+}
+img{
+    width: 100%;
+    height: auto;
+    padding-bottom:10px;
+    
+}
+p{
+    font-size: 25px;
+}
+
+.red{
+    color:#FF0000;
+}
+
+/*Header*/
+
+
+/*Image*/
+.reporter_img{
+  height: 98%;
+  width: auto;
+  bottom:0px;
+  left:45%;
+}
+.background-image{
+    width: 100%;
+}
+.post{
+  width: 70%;
+}
+.form{
+  width: 80%;
+  text-align: center;
+}
+
+
+/*Головне Україна*/
+.a {
+  position: absolute;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  width: 0;
+  height: 0;
+  transition: .3s;
+}
+.a1 {top:0; left:0; border-right: none; border-bottom: none;}
+.a2 {top:0; right:0; border-left: none; border-bottom: none;}
+.a3 {bottom:0; right:0; border-top: none; border-left: none;}
+.a4 {bottom:0; left:0; border-top: none; border-right: none;}
+.parent {
+  left: 10%;
+  top:5%;
+  min-width: 25%;
+  width: 40%;
+  height: auto;
+}
+.parent .a {
+  width: 20px;
+  height: 20px;
+  border-color: #ffffff;
+}
+
+.main_ukraine{
+    margin:15px;
+    padding:0px 0px 0px 0px;
+    background-color:#040F85;
+    border:4px solid #ffffff;
+    text-align: center;
+    font-size:4vw;
+    color:white;
+}
+.main_ukraine span{
+    color:#FFE600
+}
+
+
+/*Header Text*/
+
+.header_text{
+    top:55%;
+    left:10%;
+    font-size: 4vw;
+    color:#ffffff
+}
+.header_text span:nth-child(3) {
+    color:#040F85;
+    background-color:#FFE600;
+    padding-right: 2px;
+}
+.header_text span:nth-child(5) {
+    font-weight: 800;
+}
+
+
+
+
+/*Main*/
+
+.first_block p:nth-child(1){
+   font-weight: 700;
+   font-size:29px;
+}
+.first_block p:nth-child(2){
+    text-align: end;
+    color:#858585;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.second_block p{
+    font-weight: 700;
+    font-size: 29px;
+}
+
+
+
+/*Footer*/
+
+/*Timer*/
+#countdown{
+    top:34%;
+    right: 50%;
+    font-size: 1vh;
+}
+
+
+
+
+
+/*Modal*/
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap:10px;
+}
+
+
+
+@media(max-width:500px){
+  p{
+    font-size: 15px;
+  }
+  #countdown{
+    font-size: 10px;
+    top:33%;
+  }
+  .post{
+    width:320px;
+  }
+  .form{
+    width:320px;
+  }
+ 
+}
+@media(min-width:1000px){
+  #countdown{
+    font-size: 2vh;
+  }
+}
