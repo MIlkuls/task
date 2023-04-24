@@ -37,7 +37,7 @@ setTimeout(() => {
 
     modal.style.display = "block";
  
-}, 222000);
+}, 20000);
 
 
 
