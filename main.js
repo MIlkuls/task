@@ -27,17 +27,18 @@ document.querySelector('.date').innerHTML = `${year}.${month}.${day}`
 /*Modal*/
 
 let modal = document.querySelector(".modal")
+let display = false
 
-document.addEventListener('mouseleave', (event) => {
+document.addEventListener('mouseleave', showModal);
+
+function showModal(){
+   if (!display) {
    modal.style.display = "block"
-});
+    display = true;
+   }
+}
 
-
-setTimeout(() => {
-
-    modal.style.display = "block";
- 
-}, 20000);
+setTimeout(showModal, 20000);
 
 
 
